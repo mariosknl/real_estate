@@ -1,12 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Box, Flex, Text, Avatar } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/layout";
+import { Avatar } from "@chakra-ui/avatar";
 import { FaBed, FaBath } from "react-icons/fa";
 import { BsGridFill } from "react-icons/bs";
 import { GoVerified } from "react-icons/go";
 import millify from "millify";
 
-import defaultImage from "../assets/images/house.jpeg";
+import DefaultImage from "../assets/images/house.jpeg";
 
 const Property = ({
   property: {
@@ -27,14 +28,13 @@ const Property = ({
       flexWrap="wrap"
       w="420px"
       p="5"
-      paddingTop="0"
+      paddingTop="0px"
       justifyContent="flex-start"
       cursor="pointer"
     >
       <Box>
         <Image
-          src={coverPhoto ? coverPhoto.url : defaultImage}
-          alt="house"
+          src={coverPhoto ? coverPhoto.url : DefaultImage}
           width={400}
           height={260}
         />
@@ -46,12 +46,12 @@ const Property = ({
               {isVerified && <GoVerified />}
             </Box>
             <Text fontWeight="bold" fontSize="lg">
-              AED {millify(price)}
+              AED {price}
               {rentFrequency && `/${rentFrequency}`}
             </Text>
           </Flex>
           <Box>
-            <Avatar size="sm" src={agency?.logo?.url} />
+            <Avatar size="sm" src={agency?.logo?.url}></Avatar>
           </Box>
         </Flex>
         <Flex
@@ -61,11 +61,11 @@ const Property = ({
           w="250px"
           color="blue.400"
         >
-          {rooms} <FaBed /> | {baths} <FaBath /> | {millify(area)} sqft{" "}
-          <BsGridFill />
+          {rooms}
+          <FaBed /> | {baths} <FaBath /> | {millify(area)} sqft <BsGridFill />
         </Flex>
         <Text fontSize="lg">
-          {title.length > 30 ? `${title.substring(0, 30)}...` : title}
+          {title.length > 30 ? title.substring(0, 30) + "..." : title}
         </Text>
       </Box>
     </Flex>
