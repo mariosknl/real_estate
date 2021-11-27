@@ -16,7 +16,7 @@ export const Banner = ({
   imageUrl,
 }) => (
   <Flex flexWrap="wrap" justifyContent="center" alignItems="center" m="10">
-    <Image src={imageUrl} width={500} height={300} />
+    <Image src={imageUrl} width={500} height={300} alt="image" />
     <Box p="5">
       <Text color="gray.500" fontSize="sm" fontWeight="medium">
         {purpose}
