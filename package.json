@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "@chakra-ui/react": "2.2.1",
-    "@emotion/react": "11.9.0",
-    "@emotion/styled": "11.8.1",
+    "@emotion/react": "11.9.3",
+    "@emotion/styled": "11.9.3",
     "axios": "0.27.2",
     "framer-motion": "6.3.11",
     "millify": "4.0.0",
