@@ -13,7 +13,7 @@
     "@emotion/styled": "11.10.4",
     "axios": "0.27.2",
     "framer-motion": "7.3.2",
-    "millify": "5.0.0",
+    "millify": "5.0.1",
     "next": "12.3.0",
     "nprogress": "0.2.0",
     "react": "18.2.0",
