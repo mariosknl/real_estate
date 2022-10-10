@@ -11,7 +11,7 @@
     "@chakra-ui/react": "2.3.5",
     "@emotion/react": "11.10.4",
     "@emotion/styled": "11.10.4",
-    "axios": "0.27.2",
+    "axios": "1.1.2",
     "framer-motion": "7.5.3",
     "millify": "5.0.1",
     "next": "12.3.1",
