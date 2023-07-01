@@ -22,7 +22,7 @@
     "react-icons": "4.9.0"
   },
   "devDependencies": {
-    "eslint": "8.42.0",
+    "eslint": "8.44.0",
     "eslint-config-next": "13.4.7"
   }
 }
