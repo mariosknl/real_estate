@@ -14,7 +14,7 @@
     "framer-motion": "11.11.10",
     "axios": "1.7.7",
     "millify": "6.1.0",
-    "next": "14.2.14",
+    "next": "14.2.16",
     "nprogress": "0.2.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
@@ -23,6 +23,6 @@
   },
   "devDependencies": {
     "eslint": "8.57.1",
-    "eslint-config-next": "14.2.14"
+    "eslint-config-next": "14.2.16"
   }
 }
